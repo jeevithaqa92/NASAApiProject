@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-08T09:38:43 PST" name="Suite" finished-at="2022-01-08T09:38:51 PST" duration-ms="8565">
+    <groups>
+    </groups>
+    <test started-at="2022-01-08T09:38:43 PST" name="Test" finished-at="2022-01-08T09:38:51 PST" duration-ms="8565">
+      <class name="com.sky.test.ApplicationTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:42 PST" name="setUpSuite" finished-at="2022-01-08T09:38:43 PST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method signature="VerifyAstronomyPictureOfTheDay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:44 PST" name="VerifyAstronomyPictureOfTheDay" data-provider="ApplicationTestData" finished-at="2022-01-08T09:38:51 PST" duration-ms="6803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/planetary/apod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2022-01-01]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2022-01-07]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAstronomyPictureOfTheDay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:51 PST" name="tearDown" finished-at="2022-01-08T09:38:51 PST" duration-ms="551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sky.test.ApplicationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
