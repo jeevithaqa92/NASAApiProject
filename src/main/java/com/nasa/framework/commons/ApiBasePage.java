@@ -80,16 +80,18 @@ public class ApiBasePage {
 	}
 
 	// Method to get specific parameter value from response
-	public String[] getValueFromResponse(Response response, String key) throws IOException {
-		String[] values = null;
+	public String getValueFromResponse(Response response, String key) throws IOException {
+		String value = null;
 		Logger = TestBasePage.getLogger();
-		String value = response.getBody().jsonPath().getString(key);
+		value = response.getBody().jsonPath().getString(key);
 		if (!(value == null)) {
 			Logger.pass(key + " = " + value);
 		} else {
 			Logger.fail("No Response From Api");
 		}
-		return values;
+		return value;
 	}
+	
+	
 
 }

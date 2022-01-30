@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 08 09:38:43 PST 2022</td>
+<td>Started on:</td><td>Sun Jan 30 09:13:53 PST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8565 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12785 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDay()'><b>VerifyAstronomyPictureOfTheDay</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: /planetary/apod, 200, TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, 2022-01-01, 2022-01-07</td>
+<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidKey()'><b>VerifyAstronomyPictureOfTheDayWithInValidKey</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: {start_date=2022-01-01, ExpectedResponse=API_KEY_INVALID, ExpectedStatusCode=403, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsY, end_date=2022-01-07}</td>
 <td></td>
-<td>6</td>
-<td>com.sky.test.ApplicationTest@7c24b813</td></tr>
+<td>0</td>
+<td>com.sky.test.ApplicationTest@543588e6</td></tr>
+<tr>
+<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDayWithValidKey()'><b>VerifyAstronomyPictureOfTheDayWithValidKey</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: {start_date=2022-01-01, ExpectedStatusCode=200, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022-01-07}</td>
+<td></td>
+<td>8</td>
+<td>com.sky.test.ApplicationTest@543588e6</td></tr>
+<tr>
+<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidDateFormat()'><b>VerifyAstronomyPictureOfTheDayWithInValidDateFormat</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: {start_date=2022/01/06, ExpectedResponse=does not match format, ExpectedStatusCode=400, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022/01/07}</td>
+<td></td>
+<td>0</td>
+<td>com.sky.test.ApplicationTest@543588e6</td></tr>
+<tr>
+<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidRequest()'><b>VerifyAstronomyPictureOfTheDayWithInValidRequest</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: {start_date=2022-01-01, ExpectedResponse=Page not found, ExpectedStatusCode=404, ServiceEndpointURL=/planetary/apo, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022-01-07}</td>
+<td></td>
+<td>0</td>
+<td>com.sky.test.ApplicationTest@543588e6</td></tr>
+<tr>
+<td title='com.sky.test.ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidDate()'><b>VerifyAstronomyPictureOfTheDayWithInValidDate</b><br>Test class: com.sky.test.ApplicationTest<br>Parameters: {start_date=2023-01-01, ExpectedResponse=Date must be between Jun 16, 1995, ExpectedStatusCode=400, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2023-01-07}</td>
+<td></td>
+<td>0</td>
+<td>com.sky.test.ApplicationTest@543588e6</td></tr>
 </table><p>
 </body>
 </html>

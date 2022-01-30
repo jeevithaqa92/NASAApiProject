@@ -1,48 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-08T09:38:43 PST" name="Suite" finished-at="2022-01-08T09:38:51 PST" duration-ms="8565">
+  <suite started-at="2022-01-30T09:13:53 PST" name="Suite" finished-at="2022-01-30T09:14:06 PST" duration-ms="12785">
     <groups>
+      <group name="Functional">
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidDateFormat(java.util.Map)[pri:4, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithInValidDateFormat" class="com.sky.test.ApplicationTest"/>
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidRequest(java.util.Map)[pri:3, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithInValidRequest" class="com.sky.test.ApplicationTest"/>
+      </group> <!-- Functional -->
+      <group name="Regression">
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidDate(java.util.Map)[pri:5, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithInValidDate" class="com.sky.test.ApplicationTest"/>
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithInValidKey(java.util.Map)[pri:2, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithInValidKey" class="com.sky.test.ApplicationTest"/>
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithValidKey(java.util.Map)[pri:1, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithValidKey" class="com.sky.test.ApplicationTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="ApplicationTest.VerifyAstronomyPictureOfTheDayWithValidKey(java.util.Map)[pri:1, instance:com.sky.test.ApplicationTest@543588e6]" name="VerifyAstronomyPictureOfTheDayWithValidKey" class="com.sky.test.ApplicationTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-01-08T09:38:43 PST" name="Test" finished-at="2022-01-08T09:38:51 PST" duration-ms="8565">
+    <test started-at="2022-01-30T09:13:53 PST" name="Test" finished-at="2022-01-30T09:14:06 PST" duration-ms="12785">
       <class name="com.sky.test.ApplicationTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:42 PST" name="setUpSuite" finished-at="2022-01-08T09:38:43 PST" duration-ms="374" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:13:53 PST" name="setUpSuite" finished-at="2022-01-30T09:13:53 PST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method signature="VerifyAstronomyPictureOfTheDay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:44 PST" name="VerifyAstronomyPictureOfTheDay" data-provider="ApplicationTestData" finished-at="2022-01-08T09:38:51 PST" duration-ms="6803" status="PASS">
+        <test-method signature="VerifyAstronomyPictureOfTheDayWithValidKey(java.util.Map)[pri:1, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:13:54 PST" name="VerifyAstronomyPictureOfTheDayWithValidKey" data-provider="ApplicationTestData" finished-at="2022-01-30T09:14:03 PST" duration-ms="8420" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[/planetary/apod]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2022-01-01]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[2022-01-07]]>
+                <![CDATA[{start_date=2022-01-01, ExpectedStatusCode=200, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022-01-07}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAstronomyPictureOfTheDay -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@7c24b813]" started-at="2022-01-08T09:38:51 PST" name="tearDown" finished-at="2022-01-08T09:38:51 PST" duration-ms="551" status="PASS">
+        </test-method> <!-- VerifyAstronomyPictureOfTheDayWithValidKey -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:03 PST" name="tearDown" finished-at="2022-01-30T09:14:03 PST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="VerifyAstronomyPictureOfTheDayWithInValidKey(java.util.Map)[pri:2, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:03 PST" name="VerifyAstronomyPictureOfTheDayWithInValidKey" data-provider="ApplicationTestData" finished-at="2022-01-30T09:14:04 PST" duration-ms="585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{start_date=2022-01-01, ExpectedResponse=API_KEY_INVALID, ExpectedStatusCode=403, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsY, end_date=2022-01-07}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAstronomyPictureOfTheDayWithInValidKey -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:04 PST" name="tearDown" finished-at="2022-01-30T09:14:04 PST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="VerifyAstronomyPictureOfTheDayWithInValidRequest(java.util.Map)[pri:3, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:04 PST" name="VerifyAstronomyPictureOfTheDayWithInValidRequest" data-provider="ApplicationTestData" finished-at="2022-01-30T09:14:05 PST" duration-ms="633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{start_date=2022-01-01, ExpectedResponse=Page not found, ExpectedStatusCode=404, ServiceEndpointURL=/planetary/apo, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022-01-07}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAstronomyPictureOfTheDayWithInValidRequest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:05 PST" name="tearDown" finished-at="2022-01-30T09:14:05 PST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="VerifyAstronomyPictureOfTheDayWithInValidDateFormat(java.util.Map)[pri:4, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:05 PST" name="VerifyAstronomyPictureOfTheDayWithInValidDateFormat" data-provider="ApplicationTestData" finished-at="2022-01-30T09:14:05 PST" duration-ms="763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{start_date=2022/01/06, ExpectedResponse=does not match format, ExpectedStatusCode=400, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2022/01/07}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAstronomyPictureOfTheDayWithInValidDateFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:05 PST" name="tearDown" finished-at="2022-01-30T09:14:06 PST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="VerifyAstronomyPictureOfTheDayWithInValidDate(java.util.Map)[pri:5, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:06 PST" name="VerifyAstronomyPictureOfTheDayWithInValidDate" data-provider="ApplicationTestData" finished-at="2022-01-30T09:14:06 PST" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{start_date=2023-01-01, ExpectedResponse=Date must be between Jun 16, 1995, ExpectedStatusCode=400, ServiceEndpointURL=/planetary/apod, api_key=TyBDqI0wL9gqqA9jR6Qls0grxWopexehbpEHOsYl, end_date=2023-01-07}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAstronomyPictureOfTheDayWithInValidDate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sky.test.ApplicationTest@543588e6]" started-at="2022-01-30T09:14:06 PST" name="tearDown" finished-at="2022-01-30T09:14:06 PST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
